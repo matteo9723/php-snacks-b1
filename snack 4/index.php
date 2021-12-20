@@ -1,5 +1,14 @@
 <?php
-
+  $array=[];
+  for($i=0;$i<15;$i++){
+    $number=rand(0,100);
+    if(in_array($number,$array)){
+      $i--;
+    }else{
+      array_push($array,$number) ;
+    }
+  }
+ 
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +20,8 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <?php
+   var_dump($array);
+  ?>
 </body>
 </html>

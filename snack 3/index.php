@@ -1,5 +1,10 @@
 <?php
 
+  $array=[
+    01-02-1970=> ['ciaooo','come va'],
+    01-02-1971 => ['buongiorno','buonsalve']
+  ];
+
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +16,19 @@
   <title>Document</title>
 </head>
 <body>
-  
+ <ul> 
+  <?php
+    echo "<h1> 01-02-1970 </h1>";
+    for($i=0;$i<count($array[01-02-1970]);$i++){
+      echo " <li> {$array[01-02-1970][$i]}</li> ";
+    };
+    echo "<h1> 01-02-1971 </h1>";
+    for($i=0;$i<count($array[01-02-1971]);$i++){
+      echo " <li> {$array[01-02-1971][$i]}</li> ";
+    };
+    
+ 
+  ?>
+ </ul> 
 </body>
 </html>
