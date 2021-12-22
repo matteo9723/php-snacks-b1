@@ -1,11 +1,18 @@
 <?php
   $array=[];
-  for($i=0;$i<15;$i++){
+  // for($i=0;$i<15;$i++){
+  //   $number=rand(0,100);
+  //   if(in_array($number,$array)){
+  //     $i--;
+  //   }else{
+  //     array_push($array,$number) ;
+  //   }
+  // }
+
+  while(count($array)<15){
     $number=rand(0,100);
-    if(in_array($number,$array)){
-      $i--;
-    }else{
-      array_push($array,$number) ;
+    if(!in_array($number,$array)){
+      array_push($array,$number);
     }
   }
  
